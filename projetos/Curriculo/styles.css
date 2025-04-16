@@ -1,0 +1,142 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cordeFundo: #f4f4f9; /* Fundo claro para boa legibilidade */
+    --primariaTexto: #1e293b; /* Azul escuro para títulos */
+    --secundariaTexto: #475569; /* Cinza-azulado para textos secundários */
+    --corDestaque: #7c3aed; /* Roxo para elementos de destaque */
+    --corBorda: #e2e8f0; /* Cinza claro para bordas */
+    --corLink: #4f46e5; /* Azul para links */
+    --corLinkHover: #4338ca; /* Azul mais escuro para hover */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cordeFundo);
+    color: var(--secundariaTexto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%; /* Cantos arredondados */
+    border: 4px solid var(--corBorda);
+    margin-bottom: 10px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao quadrado */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primariaTexto);
+    margin-bottom: 5px;
+}
+
+/* Contato */
+.contato-lista {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os itens */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contato-lista li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid var(--corBorda); /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    background-color: transparent; /* Fundo transparente */
+    color: var(--primariaTexto); /* Cor do texto */
+    cursor: pointer; /* Cursor de botão */
+    transition: all 0.3s ease; /* Transição suave */
+    text-align: center;
+}
+
+.contato-lista li:hover {
+    background-color: var(--corDestaque); /* Fundo roxo no hover */
+    color: #ffffff; /* Texto branco no hover */
+    border-color: var(--corDestaque); /* Borda roxa no hover */
+}
+
+.contato-lista li a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do pai */
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid var(--corBorda);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: var(--primariaTexto);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--corDestaque);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: var(--secundariaTexto);
+}
+
+ul li strong {
+    color: var(--primariaTexto);
+}
+
+/* Links */
+a {
+    color: var(--corLink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--corLinkHover);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--primariaTexto);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
