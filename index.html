@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="img/Minha foto1-Photoroom.jpg" alt="foto-perfil" class="foto-perfil">
+        <h1>Wagner Daniel Felix</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá, sou desenvolvedor front-end. Tenho graduação em Análise e Desenvolvimento de Sistemas na instituição Cruzeiro do Sul. 
+                Sou apaixonado por tecnologia e estou sempre em busca de novos conhecimentos para aprimorar minhas habilidades e acompanhar as tendências do mercado.
+                 Tenho experiência em diversos projetos e estou sempre disposto a enfrentar novos desafios.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <a href="projetos/Media/Index.html"><img src="img/media page.png" alt="mediaProjeto" class="projetos-imagem"></a>
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto de média</h3>
+                    <p class="paragrafo-projetos">Uma pagina simples para o calculo de media com base em quatros notas</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="img/site.png" alt="projeto2" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto 2</h3>
+                    <p class="paragrafo-projetos">Descrição do projeto 2</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="img/site.png" alt="projeto3" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto 3</h3>
+                    <p class="paragrafo-projetos">Descrição do projeto 3</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em contato</h2>
+
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="nome-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem"></textarea>
+            </div>
+            <button type="button" class="botao-form" onclick="enviarWhats (event)">Enviar WhatsApp</button>
+            <button type="button" class="botao-form" onclick="enviarEmail (event)">Enviar Email</button>
+
+        </form>
+
+
+</body>
+
+</html>

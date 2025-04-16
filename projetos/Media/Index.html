@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Média</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Calculando a Média</h1>
+        <div class="formulario-resultado">
+            <div class="formulario">
+                <form id="mediaForm">
+                    <label for="n1">Primeira nota:</label>
+                    <input type="number" id="n1" placeholder="Digite a nota de 1 a 10" min="1" max="10" oninput="validity.valid||(value='');" required>
+                    <label for="n2">Segunda nota:</label>
+                    <input type="number" id="n2" placeholder="Digite a nota de 1 a 10" min="1" max="10" oninput="validity.valid||(value='');" required>
+                    <label for="n3">Terceira nota:</label>
+                    <input type="number" id="n3" placeholder="Digite a nota de 1 a 10" min="1" max="10" oninput="validity.valid||(value='');" required>
+                    <label for="n4">Quarta nota:</label>
+                    <input type="number" id="n4" placeholder="Digite a nota de 1 a 10" min="1" max="10" oninput="validity.valid||(value='');" required>
+                </form>
+            </div>
+            <div class="resultado">
+                <h2>Resultado</h2>
+                <p id="resultadoTexto">Insira as notas e clique em "Calcular".</p>
+            </div>
+        </div>
+        <div class="botoes">
+            <button id="calcularBtn">Calcular</button>
+            <button id="limparBtn" type="button">Limpar</button>
+        </div>
+    </main>
+</body>
+
+</html>

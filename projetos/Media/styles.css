@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4765a3, #0d3c8d);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.30);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.formulario-resultado {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.formulario {
+    width: 48%; /* Ocupa metade do espaço */
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    width: 48%; /* Ocupa metade do espaço */
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #eeb854;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 70%;
+}
+
+button {
+    margin-top: 10px 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultadoTexto {
+    font-size: 18px;
+    color: #333;
+}
+
+#limparBtn {
+    background-color: #dc3545;
+}
+
+#limparBtn:hover {
+    background-color: #a71d2a;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield; /* Standard property for compatibility */
+    -moz-appearance: textfield; /* Para navegadores Firefox */
+}
