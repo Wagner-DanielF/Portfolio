@@ -151,6 +151,48 @@ h1{
     font-size: 1.2rem;    
 }
 
+.habilidades{
+    padding: 6rem 2rem;
+}
+
+.habilidades-titulo{
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.habilidades-caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 1rem;   
+}
+
+.habilidades-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.25rem;
+}
+
+.habilidades-info{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    gap: 1rem;
+}
+
 .projetos{
     padding: 6rem 2rem;
 }
