@@ -140,3 +140,23 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .contato-lista {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    section {
+        padding: 10px;
+    }
+}
