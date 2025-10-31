@@ -18,6 +18,7 @@ html {
     --fonte-1: "Special Gothic", sans-serif;
     --fonte-2: "Delius Swash Caps", cursive;
     --fonte-3: "Pixelify Sans", sans-serif;
+    --nav-height: 64px;
 }
 
 body {
@@ -86,6 +87,11 @@ body.Pixelify-sans {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.cabecalho,
+main {
+    padding-top: var(--nav-height);
 }
 
 menu {
@@ -376,6 +382,18 @@ h1 {
     display: none;
 }
 
+@media (max-width: 1024px) {
+    .navegacao, .fonte {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .cabecalho,
+    main {
+        padding-top: calc(var(--nav-height) + 5rem); /* ajuste se necessário */
+    }
+}
+
 /* mobile behaviour */
 @media (max-width: 768px) {
     .menu {
@@ -437,12 +455,13 @@ h1 {
     }
 
     /* trocar ícones ao abrir/fechar (visuais) */
-    .menu.open + .hamburger .hamburger-icon,
+    .menu.open+.hamburger .hamburger-icon,
     /* se usar ordem diferente no DOM, o JS controla exibição; CSS apenas fallback */
     .hamburger.open .hamburger-icon {
         display: none;
     }
-    .menu.open + .hamburger .close-icon,
+
+    .menu.open+.hamburger .close-icon,
     .hamburger.open .close-icon {
         display: block;
     }
