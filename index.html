@@ -38,7 +38,12 @@
                 </li>
             </ul>
 
-            <menu>
+            <button id="hamburger" class="hamburger" aria-label="Abrir menu" type="button">
+                <img src="img/hamburguerMenu.png" alt="abrir menu" class="hamburger-icon">
+                <img src="img/fechar.png" alt="fechar menu" class="close-icon" aria-hidden="true">
+            </button>
+
+            <menu class="fonte">
                 <label for="font-selector">Escolha uma fonte:</label>
                 <select id="font-selector" onchange="document.body.className = this.value">
                     <option value="Special-gothic">Special Gothic</option>

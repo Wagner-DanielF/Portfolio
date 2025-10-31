@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
     --escuro: #0f172a;
-    --maisEscuro: #0a0f1c;  
+    --maisEscuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
     --fonte-1: "Special Gothic", sans-serif;
@@ -20,7 +20,7 @@ html{
     --fonte-3: "Pixelify Sans", sans-serif;
 }
 
-body{
+body {
     font-family: var(--fonte-1);
     background-color: var(--escuro);
     color: var(--claro);
@@ -38,7 +38,7 @@ body.Pixelify-sans {
     font-family: var(--fonte-3);
 }
 
-.navegacao{
+.navegacao {
     display: flex;
     justify-content: space-evenly;
     position: fixed;
@@ -49,7 +49,7 @@ body.Pixelify-sans {
     padding: 1rem;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body.Pixelify-sans {
     gap: 3rem;
 }
 
-.menu-link{
+.menu-link {
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
@@ -65,7 +65,7 @@ body.Pixelify-sans {
     padding: 0.5rem 0;
 }
 
-.menu-link::before{
+.menu-link::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -76,11 +76,11 @@ body.Pixelify-sans {
     transition: width 0.4s ease;
 }
 
-.menu-link:hover::before{
+.menu-link:hover::before {
     width: 100%;
 }
 
-.cabecalho{
+.cabecalho {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -88,14 +88,14 @@ body.Pixelify-sans {
     flex-direction: column;
 }
 
-menu{
+menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-menu select{
+menu select {
     padding: 5px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -104,7 +104,7 @@ menu select{
     cursor: pointer;
 }
 
-.foto-perfil{
+.foto-perfil {
     width: 300px;
     height: 250px;
     box-shadow: 0, 0, 20px, rgba(79, 70, 229, 0.3);
@@ -113,30 +113,30 @@ menu select{
     animation: flutuar 5s ease-in-out infinite;
 }
 
-h1{
+h1 {
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
 }
 
-.cabecalho-sub-titulo{
+.cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
 }
 
-.sobre{
+.sobre {
     padding: 6rem 2rem;
 }
 
-.sobre-titulo{
+.sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 1.25rem;
 }
 
-.sobre-caixa{
+.sobre-caixa {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -146,36 +146,36 @@ h1{
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.sobre-paragrafo{
+.sobre-paragrafo {
     text-align: center;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
-.habilidades{
+.habilidades {
     padding: 6rem 2rem;
 }
 
-.habilidades-titulo{
+.habilidades-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 1.25rem;
 }
 
-.habilidades-caixa{
+.habilidades-caixa {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem; 
+    gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem 0;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    border-radius: 1rem;   
+    border-radius: 1rem;
 }
 
-.habilidades-card{
+.habilidades-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -184,7 +184,7 @@ h1{
     padding: 0.25rem;
 }
 
-.habilidades-info{
+.habilidades-info {
     display: flex;
     justify-content: center;
     padding: 0.5rem 3rem;
@@ -192,19 +192,19 @@ h1{
     font-size: 1.2rem;
 }
 
-.projetos{
+.projetos {
     padding: 6rem 2rem;
 }
 
-.projetos-caixa{
+.projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; 
+    gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-.projetos-card{
+.projetos-card {
     border-radius: 16px;
     border: 1px solid var(--vidro);
     backdrop-filter: blur(5px);
@@ -215,12 +215,12 @@ h1{
 
 }
 
-.projetos-card:hover{
+.projetos-card:hover {
     box-shadow: 0 10 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);
 }
 
-.projetos-titulo{
+.projetos-titulo {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -228,37 +228,37 @@ h1{
 
 
 
-.projetos-imagem{
+.projetos-imagem {
     height: 200px;
     width: 100%;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
 
-.caixa-texto-projeto{
+.caixa-texto-projeto {
     padding: 1.5rem;
 }
 
-.paragrafo-projetos{
+.paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
-    line-height: 1.25rem;   
+    line-height: 1.25rem;
 }
 
-.info-projetos{
+.info-projetos {
     margin-bottom: 5px;
 }
 
-.contato{
+.contato {
     padding: 6rem 2rem;
 }
 
-.contato-titulo{
+.contato-titulo {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.formulario-contato{
+.formulario-contato {
     max-width: 600px;
     margin: 0 auto;
     border-radius: 16px;
@@ -268,7 +268,8 @@ h1{
     padding: 2rem;
 
 }
-.nome-form{
+
+.nome-form {
     width: 100%;
     padding: 1rem;
     border-radius: 8px;
@@ -278,12 +279,12 @@ h1{
     outline: none;
 }
 
-.nome-form:focus{
+.nome-form:focus {
     border: 1px solid var(--secundaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
 }
 
-.campo-form{
+.campo-form {
     width: 100%;
     height: 200px;
     padding: 1rem;
@@ -292,19 +293,19 @@ h1{
     background: rgba(255, 255, 255, 0.05);
     color: var(--claro);
     outline: none;
-    resize: none;    
+    resize: none;
 }
 
-.campo-form:focus{
+.campo-form:focus {
     border: 1px solid var(--secundaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
 }
 
-.grupo-form{
+.grupo-form {
     margin-bottom: 1.5rem;
 }
 
-.botao-form{
+.botao-form {
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -317,7 +318,7 @@ h1{
     margin: 1rem 0;
 }
 
-.botao-form:hover{
+.botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
@@ -331,17 +332,118 @@ h1{
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%), 
-                radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%);
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%);
     background-color: var(--maisEscuro);
 }
 
 @keyframes flutuar {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
-    
+
+}
+
+/* botão hamburguer*/
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ícones dentro do botão */
+.hamburger img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* por padrão mostrar só o ícone de menu */
+.hamburger .close-icon {
+    display: none;
+}
+
+/* mobile behaviour */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 64px;
+        /* abaixo da barra - será substituído quando abrir */
+        right: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        background: transparent;
+        display: none;
+        min-width: 180px;
+        z-index: 110;
+    }
+
+    /* mostrar botão hamburguer */
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+        /* acima do menu */
+    }
+
+    /* quando aberto — transformar em overlay fullscreen */
+    .menu.open {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        /* abre a partir do topo */
+        height: 50vh;
+        /* cobre metade da tela */
+        z-index: 999;
+        margin: 0;
+        padding: 2.5rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: rgba(10, 12, 20, 0.35);
+        /* transparente — ajuste alfa */
+        backdrop-filter: blur(4px);
+        /* opcional */
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    /* links maiores no overlay */
+    .menu-link {
+        padding: 0.75rem 1rem;
+        font-size: 1.15rem;
+    }
+
+    /* manter o seletor de fonte na barra (fora do overlay) */
+    menu.fonte {
+        margin-left: 0.5rem;
+    }
+
+    /* trocar ícones ao abrir/fechar (visuais) */
+    .menu.open + .hamburger .hamburger-icon,
+    /* se usar ordem diferente no DOM, o JS controla exibição; CSS apenas fallback */
+    .hamburger.open .hamburger-icon {
+        display: none;
+    }
+    .menu.open + .hamburger .close-icon,
+    .hamburger.open .close-icon {
+        display: block;
+    }
 }

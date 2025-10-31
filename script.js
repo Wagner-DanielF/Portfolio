@@ -39,3 +39,48 @@ function enviarEmail(event) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const hamb = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+    const imgHamb = hamb?.querySelector('.hamburger-icon');
+    const imgClose = hamb?.querySelector('.close-icon');
+
+    if (!hamb || !menu) return;
+
+    const setIcons = (opened) => {
+        if (imgHamb) imgHamb.style.display = opened ? 'none' : 'block';
+        if (imgClose) imgClose.style.display = opened ? 'block' : 'none';
+        // opcional: adicionar classe para efeitos CSS
+        if (opened) hamb.classList.add('open'); else hamb.classList.remove('open');
+    };
+
+    hamb.addEventListener('click', () => {
+        const opened = menu.classList.toggle('open');
+        hamb.setAttribute('aria-expanded', opened);
+        setIcons(opened);
+    });
+
+    // fechar o menu ao clicar fora
+    document.addEventListener('click', (e) => {
+        if (!menu.classList.contains('open')) return;
+        const target = e.target;
+        if (!menu.contains(target) && target !== hamb && !hamb.contains(target)) {
+            menu.classList.remove('open');
+            hamb.setAttribute('aria-expanded', 'false');
+            setIcons(false);
+        }
+    });
+
+    // fechar overlay ao clicar em qualquer link do menu
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('open');
+            hamb.setAttribute('aria-expanded', 'false');
+            setIcons(false);
+        });
+    });
+
+    // inicializa ícones corretamente
+    setIcons(false);
+});
+
